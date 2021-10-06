@@ -1,0 +1,28 @@
+        
+        
+        
+        Scanner scan = new Scanner(System.in);
+
+        while(scan.hasNextLine()){
+
+            String temp = scan.nextLine();
+
+            if(employe_list.contains(temp))
+
+            {
+
+                System.out.println(temp + " is on the "+ indexof(temp) + " place of the list.");
+
+            }
+
+            else
+
+            {
+
+                System.out.println("No such employe!");
+
+            }
+
+        }
+
+        scan.close();
