@@ -11,7 +11,7 @@ class EmpMain
         list.add(new Emp(25, "rookie", 1360000));
         list.add(new Emp(23, "linda", 860000));
         list.add(new Emp(28, "mick", 1260000));
-        list.add(new Emp(20, "jhon", 2500000));
+
 
         Scanner sc = new Scanner(System.in);
         while (true)
