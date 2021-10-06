@@ -1,7 +1,9 @@
 package com.company;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Map;
 
 public class Main {
 
@@ -37,5 +39,22 @@ public class Main {
         while(itr.hasNext()) {
             System.out.println(itr.next());
         }
+        HashMap <String, String>users =new HashMap <String, String>();
+        users.put("A","1");
+        System.out.println(users);
+        users.put("F","1");
+        users.put("B","2");
+        users.put("C","3");
+        System.out.println(users);
+
+        for (String key :users.keySet()){
+            System.out.println(key +":" +users.get(key));
+        }
+        for (Map.Entry<String, String> entry :users.entrySet()){
+            System.out.println(entry.getKey() +":" + entry.getKey());
+
+        }
+
     }
 }
+
