@@ -5,11 +5,11 @@ import java.util.List;
 class EmpMain {
     public static void main(String[] args) {
         List<Emp> list = new ArrayList<Emp>(5);
-        list.add(new Emp(20, "WuTao", 3000));
-        list.add(new Emp(21, "Bill", 2000));
-        list.add(new Emp(19, "Bob", 3500));
-        list.add(new Emp(22, "Jhon", 3000));
-        list.add(new Emp(21, "Mick", 3000));
+        list.add(new Emp(19, "jack", 1500000));
+        list.add(new Emp(25, "rookie", 1360000));
+        list.add(new Emp(25, "linda", 860000));
+        list.add(new Emp(28, "mick", 1260000));
+        list.add(new Emp(20, "jhon", 2500000));
 
         Scanner sc = new Scanner(System.in);
 
