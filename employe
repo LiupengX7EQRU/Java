@@ -50,3 +50,30 @@ class employe
         return this.name;
     }
 }
+
+
+
+
+
+
+
+
+
+package com.company;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class homework {
+    public static void main(String[] args) {
+        HashMap<String, String> users =new HashMap <String, String>();
+        users.put("123@email","12345");
+        users.put("156@email","xs959");
+        users.put("963@email","756qwe");
+
+        for (String key :users.keySet()){
+            System.out.println(users.get(key));
+        }
+    }
+}
+
