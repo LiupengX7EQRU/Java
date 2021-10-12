@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> user = new HashMap<>();
+        Scanner scan = new Scanner(System.in);
+        user.put("1@gmail", "1");
+        user.put("22@gmail", "22");
+        user.put("333@gmail", "333");
+        user.put("4444@gmail", "4444");
+        while (scan.hasNextLine()) {
+            String temp = scan.nextLine();
+            for (String key : user.keySet())
+                if (Objects.equals(temp, key)) {
+                    System.out.println(user.get(key));
+                }
+        }
+    }
+}
