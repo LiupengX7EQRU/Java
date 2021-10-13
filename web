@@ -1,0 +1,48 @@
+{
+    "$schema": "./frankfurter.json",
+    "amount":1.0,
+    "base":"EUR",
+    "date":"2021-10-13",
+    "rates":{
+        "HUF":350,
+        "CHY":7.5,
+        "EGP":18,
+        "PHP":58,
+        "QAR":4,
+        "JOD":0.82,
+        "USD":1.17,
+        "GBP":0.857
+    }
+}
+
+
+
+
+
+
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Schema for the Frankfuter API",
+    "type": "object",
+    "properties":{
+        "amount ":{"type":"number"},
+        "base":{
+            "type":"string",
+            "pattern": "^[A-Z]{3}$"
+        },
+        "date":{
+            "type":"string",
+            "format":"date"
+        },
+        "rates":{
+            "type":"object",
+            "patternProperties": {
+                "^[A-Z]{3}$":{"type":"number"}
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": ["amount","base","date","rates"],
+    "additionalProperties": true
+}
