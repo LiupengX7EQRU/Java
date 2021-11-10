@@ -1,0 +1,70 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        customer cus1 =new customer();
+        cus1.name="jack";
+        cus1.age=25;
+        cus1.address="debrecen 21-23";
+
+        customer cus2 =new customer();
+        cus2.name="mark";
+        cus2.age=23;
+        cus2.address="budapest peterfia 16";
+
+        customer cus3 =new customer();
+        cus3.name="tairong";
+        cus3.age=26;
+        cus3.address="debrecen 25";
+
+        customer cus4 =new customer();
+        cus4.name="V";
+        cus4.age=30;
+        cus4.address="debrecen 27";
+
+        customer cus5 =new customer();
+        cus5.name="jinmi";
+        cus5.age=32;
+        cus5.address="debrecen 35";
+
+    }
+}
+
+
+
+package com.company;
+
+
+    public class person {
+        Integer ID;
+        String name;
+        Integer age;
+        String address;
+    }
+
+
+
+package com.company;
+
+import java.util.ArrayList;
+
+public class employee extends person {
+    Integer salary;
+    String positing;
+
+    ArrayList<employee> Emp_list =new ArrayList<>();
+    ArrayList<customer> Emp_list1= new ArrayList<>();
+
+}
+
+
+
+package com.company;
+
+public class customer extends person{
+
+
+
+}
